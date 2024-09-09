@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" >
+
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextDescription"
+            tools:layout_editor_absoluteX="160dp" />
+
+        <EditText
+            android:id="@+id/editTextProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Product name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTextOriginalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Original price"
+            app:layout_constraintEnd_toEndOf="@+id/editTextProductName"
+            app:layout_constraintStart_toStartOf="@+id/editTextProductName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextProductName" />
+
+        <EditText
+            android:id="@+id/editTextTextSalePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Sale price"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextOriginalPrice"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextOriginalPrice"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextOriginalPrice" />
+
+        <EditText
+            android:id="@+id/editTextTextProductType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Product Type"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextSalePrice"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextSalePrice"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextSalePrice" />
+
+        <EditText
+            android:id="@+id/editTextTextDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Description"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextProductType"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextProductType"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextProductType" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
